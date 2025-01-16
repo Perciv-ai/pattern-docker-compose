@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+
+  ouster_ros:
+    image: ouster-ros
+    network_mode: host
+    command: >
+      sensor_hostname:=192.168.100.203
+      udp_dest:=192.168.100.30
+      lidar_port:=7502
+      imu_port:=7503
+      viz:=false
+      azimuth_window_start:=0
+      azimuth_window_end:=360000
+      lidar_mode:=2048x10
+      timestamp_mode:=TIME_FROM_PTP_1588
+    stdin_open: true
+    tty: true
+
