@@ -6,8 +6,8 @@ services:
     image: ouster-driver
     network_mode: host
     command: >
-      sensor_hostname:=192.168.100.203
-      udp_dest:=192.168.100.30
+      sensor_hostname:=192.168.200.2
+      udp_dest:=192.168.200.1
       lidar_port:=7502
       imu_port:=7503
       viz:=false
