@@ -3,7 +3,7 @@ version: '3'
 services:
 
   ouster_ros:
-    image: ouster-ros
+    image: ouster-driver
     network_mode: host
     command: >
       sensor_hostname:=192.168.100.203
